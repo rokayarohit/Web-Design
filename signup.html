@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp-Design</title>
+</head>
+<style type="text/css">
+	body{
+		background-image: linear-gradient(blue,red);
+	}
+	@keyframes example {
+  from {background-color: green;}
+  to {background-color: yellow;}
+}
+	a{
+		text-decoration: none;
+	}
+
+	div{
+		font-family: monospace;
+		background-color: yellow;
+		width: 400px;
+		padding-top: 50px;
+		border: 3px;
+		border-radius: 50px;
+		height:400px;
+		transition: background-color 2s ease-out 100ms;
+		box-shadow: 20px 20px 20px 10px grey;
+		animation-name: example;
+		animation-duration: 4s;
+		font: bolder;
+
+	}
+		div:hover {
+	  background-color: #FF1493;
+	}
+	input[type=text]{
+		width: 250px;
+		height:40px;
+		border-color: black;
+		border-radius: 20px;
+		font-size: 20px;
+		text-align: center;
+	}
+	input[type=email]{
+		width: 250px;
+		height:40px;
+		border-color: black;
+		border-radius: 20px;
+		font-size: 20px;
+		text-align: center;
+	}
+	input[type=password]{
+		width: 250px;
+		height:40px;
+		border-color: black;
+		border-radius: 20px;
+		text-align: center;
+		font-size: 20px;
+	}
+	input[type=button]{
+		background-color: black;
+		color: white;
+		font-family: monospace;
+		width: 110px;
+		height: 40px;
+		border-radius: 10px;
+	}
+</style>
+<body>
+<center><div>
+	<h1>Log in with your account</h1><br><br>
+	<input type="text" name="username" placeholder="Username"><br><br>
+	<input type="email" name="username" placeholder="Email"><br><br>
+	<input type="password" name="password" placeholder="Password"><br><br>
+	<input type="button" name="button" value="SignUp" onclick="myFunction()"><br><br>
+	<span id="span">Already have a account?</span>
+	<a href="#">LogIn</a>
+</div>
+<center>
+</body>
+<script>
+function myFunction() {
+	alert("Thanks for testing our service!");
+	window.location.href=""
+}
+</script>
+
+</html>
